@@ -1,31 +1,41 @@
-body {
+* {
+	box-sizing: border-box;
 	font-family: arial;
 	text-align: center;
 }
 
-h1, .start-button {
-	margin-top: 100px;
+
+main {
+	max-width: 960px;
+	margin: 0 auto;
 }
 
-.title {
-	font-size: 30px;
+p {
+	max-width: 1000px;
 }
 
-.start-button {
-	font-size: 30px;
+.container {
+	padding: 0 30px;
+	padding-top: 45px;
 }
 
-ul {
-	list-style-type: none;
-	text-align: left;
-	margin-left: 400px;
+.answer-correct {
+	font-size: 50px;
 }
 
-.submit-button {
-	font-size: 15px;
-	text-align: center;
+.answer-incorrect {
+	font-size: 50px;
+}
+
+.choices {
+	margin-left: 300px;
+
 }
 
 input {
-	padding-right: 5px;
+	margin-right: 5px;
+}
+
+li {
+	text-align: left;
 }

@@ -1,17 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Pop Quiz</title>
-	<link rel="stylesheet" href="main.css">
+  <meta charset="utf-8" name="description">
+
+  <title>Aaron's Pop Quiz</title>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
-	<div class="title">
-		<h1>Pop Quiz</h1>		
-	</div>
 
-	<div>
-		<button class="start-button">Start Quiz</button>
-	</div>
+  <div class="container">
 
+    <main>
+      <div class="start-page">
+        <h1>Aaron's Pop Quiz</h1>
+        <p>Here are some really random questions...good luck!</p>
+        <form name="begin">
+          <button type="submit">Start Quiz</button>
+        </form>
+      </div>
+
+      <div class="question-page">
+        <h2>Question <span class="question-count"></span></h2>
+        	<h1><span class="question-text"></span></h1>
+        <form name="current-question">
+          <ol type="a" class="choices"></ol>
+          <button type="submit">Submit</button>
+          <button class="restart-game">Start over</button>
+        </form>
+      </div>
+
+      <div class="incorrect-page">
+        <div class="incorrect-container">
+          <div class="incorrect-header"></div>
+          <p class="incorrect-text"></p>
+          <button class="see-next"></button>
+        </div>
+      </div>
+
+      <div class="results-page">
+        <h1>Results</h1>
+        <p class="results-text"></p>
+        <button class="restart-game">Restart</button>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
